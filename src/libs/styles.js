@@ -12,7 +12,7 @@ export const IPE_DEFAULT_CSS = `
 }
 
 .in-page-edit {
-  color: #252525;
+  color: var(--color-base, #252525);
   font-size: 16px;
 }
 
@@ -94,8 +94,8 @@ export const IPE_DEFAULT_CSS = `
   font-style: normal;
   font-family: sans-serif;
   font-weight: bold;
-  background: #ffffff;
-  color: #252525;
+  background: var(--background-color-neutral, #ffffff);
+  color: var(--color-base, #252525);
   font-size: 1.1em;
   line-height: 1.8em;
   text-align: center;
@@ -329,14 +329,14 @@ export const IPE_DEFAULT_CSS = `
   margin: 0;
   padding: 0.5em;
   background: transparent;
-  color: #252525;
+  color: var(--color-emphasized, #252525);
   border: 1px solid #efefef;
   border-radius: 0;
   width: 50%;
 }
 
 .in-page-edit .dialog .ssi-buttons .btn:hover {
-  background: #f8f8f8 !important;
+  background: var(--background-color-interactive--hover, #f8f8f8) !important;
 }
 
 .in-page-edit .btn.btn-single {
@@ -344,21 +344,21 @@ export const IPE_DEFAULT_CSS = `
 }
 
 .in-page-edit .dialog .ssi-buttons .btn.btn-danger {
-  color: #c33;
+  color: var(--color-destructive, #c33);
 }
 
 .in-page-edit .btn.btn-primary.btn-danger {
-  background: #d33;
+  background: var(--background-color-destructive-subtle, #d33);
   border-color: #d33;
-  color: #ffffff;
+  color: var(--color-inverted, #ffffff);
 }
 
 .in-page-edit .btn.btn-primary.btn-danger:hover {
-  background: #f33;
+  background: var(--background-color-destructive-subtle--hover, #f33);
 }
 
 .in-page-edit .btn.btn-primary.btn-danger:focus {
-  background: #c22;
+  background: var(--background-color-destructive-subtle--active, #c22);
   border-color: #c22;
   box-shadow: inset 0 0 0 1px #fff;
 }
@@ -1207,7 +1207,7 @@ body.ssi-modalOpen {
 
 .ssi-modalWindow {
   width: 100%;
-  background: #ffffff;
+  background: var(--background-color-base, #ffffff);
   border: 1px solid #c3c3c3;
   position: relative;
   border-radius: 8px;
